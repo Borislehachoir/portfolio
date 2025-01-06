@@ -148,9 +148,11 @@ header {
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   margin-bottom: 10px;
+  display: flex;
 }
 
 .card p {
