@@ -8,27 +8,79 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <img class="logo" src="logoportfolio.png" alt="logo du portfolio">
-        <ul class="nav-links">
-          <li><a href="accueil.html">Portfolio</a></li>
-          <li><a href="projets.html">Mes Projets</a></li>
+    <header class="homepage">
+        <ul>
+          <li><a href="accueil.html" >Accueil</a></li>
+          <li><a href="apropos.html" >A propos</a></li>
+          <li><a href="projets.html" >Mes projets</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="apropos.html">À Propos</a></li>
         </ul>
-      </nav>
-      </header>
+    </header>
       <main>
         <div class="about-section">
             <div class="about-content">
                 <img class="profile-image" src="moiastflo.png" alt="Moi à Saint Florent">
                 <div class="about-text">
-                    <p>Je m'appelle Boris Rocchietti, j'ai dix-neuf ans et je suis en première année de BLIT MMI.</p>
-                    <p>Je m'appelle Boris Rocchietti, j'ai dix-neuf ans et je suis en première année de BLIT MMI.</p>
-                    <p>Je m'appelle Boris Rocchietti, j'ai dix-neuf ans et je suis en première année de BLIT MMI.</p>
+                    <p> Boris Rocchietti</p>
+                    <p>Portofolio MMI </p>
                 </div>
             </div>
+        </div>
+        <div class="container1">
+          <div class="card">
+            <img src="cerf-volant.jpg" alt="Pegasus" />
+            <p>Lorem ipsum</p>
+            <button class="more-btn">More...</button>
+          </div>
+          <div class="card">
+            <img src="cerf-volant.jpg" alt="Pegasus" />
+            <p>Lorem ipsum</p>
+            <button class="more-btn">More...</button>
+          </div>
+          <div class="card">
+            <img src="cerf-volant.jpg" alt="Pegasus" />
+            <p>Lorem ipsum</p>
+            <button class="more-btn">More...</button>
+          </div>
+          <div class="card">
+            <img src="cerf-volant.jpg" alt="Pegasus" />
+            <p>Lorem ipsum</p>
+            <button class="more-btn">More...</button>
+          </div>
+          <div class="card">
+            <img src="cerf-volant.jpg" alt="Pegasus" />
+            <p>Lorem ipsum</p>
+            <button class="more-btn">More...</button>
+          </div>
+          
+        </div>
+        <div class="contact-container">
+          <div class="vertical-bar left"></div>
+          <form class="form-container">
+            <label for="name">Nom *</label>
+            <input type="text" id="name" placeholder="Jean Dupont" required>
+    
+            <label for="password">Mot de passe *</label>
+            <input type="password" id="password" placeholder="123456789" required>
+    
+            <label for="email">Courrier électronique *</label>
+            <input type="email" id="email" placeholder="Ex : jeandupont@mail.com" required>
+    
+            <fieldset>
+              <legend>Sexe</legend>
+              <label><input type="radio" name="gender" value="homme"> Homme</label>
+              <label><input type="radio" name="gender" value="femme"> Femme</label>
+            </fieldset>
+    
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" placeholder="O6 06 06 06 06">
+    
+            <label for="dob">Date de naissance</label>
+            <input type="date" id="dob">
+    
+            <button type="submit">Valider</button>
+          </form>
+          <div class="vertical-bar right"></div>
         </div>
       </main>
       <footer class="footer"></footer>
