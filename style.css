@@ -9,8 +9,15 @@ body {
   min-height: 100vh; 
 }
 
+main {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px; 
+}
+
 header {
-  background-color: #2A5A2F;
+  background-color: brown;
   padding: 1rem 2rem;
 }
 
@@ -31,21 +38,65 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
   margin: 0;
   padding: 10px;
   font-size: 26px;
   font-weight: bold;
+  position: relative;
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  padding: 10px 20px;
+  transition: 0.5s;
+  position: relative;
 }
 
-.nav-links a:hover {
-  color: #ddd;
+.nav-links:hover a {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links li:hover a {
+  color: #fff;
+}
+
+.nav-links a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  transform: scale(1.1);
+  opacity: 0;
+}
+
+.nav-links a:hover:before {
+  opacity: 1;
+  transform: scale(1);
+  border-color: #fff;
+}
+
+.nav-links li:nth-child(1) a:hover:before {
+  border-color: #0470fe;
+}
+
+.nav-links li:nth-child(2) a:hover:before {
+  border-color: #ff7675;
+}
+
+.nav-links li:nth-child(3) a:hover:before {
+  border-color: #1582fe;
+}
+
+.nav-links li:nth-child(4) a:hover:before {
+  border-color: #a29bfe;
 }
 
 .contact-container {
@@ -103,6 +154,7 @@ header {
   bottom: 0;
   left: 0;
 }
+
 .profile-image {
   width: 400px; 
   height: auto; 
@@ -125,6 +177,10 @@ header {
 .about-content {
   display: flex;
   align-items: center;
+}
+
+.about-section {
+  margin-bottom: 20px; 
 }
 
 .container {
@@ -157,10 +213,47 @@ header {
   margin: 10px 0;
 }
 
-.box .more-btn {
-  background: #7fbfbf;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 15px;
-  cursor: pointer;
-} 
+.projets-flex {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px;
+  margin: 40px 0;
+}
+.custom-container {
+  display: inline-block;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  background-color: #2A5A2F; 
+  padding: 20px;
+  border-radius: 10px; 
+  width: 300px; 
+  margin: 0 auto; 
+}
+
+.image-box img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  margin-top: 15px;
+  width: 100%; 
+}
+
+.text-item {
+  text-align: center; 
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; 
+  padding: 10px;
+  background-color: #fff; 
+  border-radius: 5px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+}

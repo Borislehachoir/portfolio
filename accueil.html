@@ -2,90 +2,101 @@
 <!doctype html>
 <html lang="fr">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header class="homepage">
-        <ul>
-          <li><a href="accueil.html" >Accueil</a></li>
-          <li><a href="apropos.html" >A propos</a></li>
-          <li><a href="projets.html" >Mes projets</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="apropos.html">À Propos</a></li>
-        </ul>
-      </nav>
-      </header>
-      <main>
-        <div class="about-section">
-            <div class="about-content">
-                <img class="profile-image" src="moiastflo.png" alt="Moi à Saint Florent">
-                <div class="about-text">
-                    <p> Boris Rocchietti</p>
-                    <p>Portofolio MMI </p>
-                </div>
-            </div>
-        </div>
-        <div class="container1">
-          <div class="card">
-            <img src="cerf-volant.jpg" alt="Pegasus" />
-            <p>Lorem ipsum</p>
-            <button class="more-btn">More...</button>
-          </div>
-          <div class="card">
-            <img src="cerf-volant.jpg" alt="Pegasus" />
-            <p>Lorem ipsum</p>
-            <button class="more-btn">More...</button>
-          </div>
-          <div class="card">
-            <img src="cerf-volant.jpg" alt="Pegasus" />
-            <p>Lorem ipsum</p>
-            <button class="more-btn">More...</button>
-          </div>
-          <div class="card">
-            <img src="cerf-volant.jpg" alt="Pegasus" />
-            <p>Lorem ipsum</p>
-            <button class="more-btn">More...</button>
-          </div>
-          <div class="card">
-            <img src="cerf-volant.jpg" alt="Pegasus" />
-            <p>Lorem ipsum</p>
-            <button class="more-btn">More...</button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header class="homepage">
+  <nav>
+    <ul class="nav-links">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="projets.html">Mes projets</a></li>
+        <li><a href="contact.html">Contact</a></li>    
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="about-section">
+    <div class="about-content">
+      <img class="profile-image" src="moiastflo.png" alt="Moi à Saint Florent">
+      <div class="about-text">
+        <p> Boris Rocchietti</p>
+        <p>Portofolio MMI </p>
+      </div>
+    </div>
+  </div>
+
+<div class="projets-flex">
+  <div class="custom-container">
+    <div class="image-box">
+      <img src="cerf-volant.jpg" alt="Cerf-volant">
+    </div>
+    <div class="text-box">
+      <div class="text-item">Projet 1</div>
+      <div class="text-item">abcdefg</div>
+    </div>
+  </div> 
+  <div class="custom-container">
+    <div class="image-box">
+      <img src="cerf-volant.jpg" alt="Cerf-volant">
+    </div>
+    <div class="text-box">
+      <div class="text-item">Projet 2</div>
+      <div class="text-item">hijklmnop</div>
+    </div>
+  </div> 
+  <div class="custom-container">
+    <div class="image-box">
+      <img src="cerf-volant.jpg" alt="Cerf-volant">
+    </div>
+    <div class="text-box">
+      <div class="text-item">Projet 3</div>
+      <div class="text-item">qrstuvwxyz</div>
+    </div>
+  </div> 
+</div>
+  
           
-        </div>
-        <div class="contact-container">
-          <div class="vertical-bar left"></div>
-          <form class="form-container">
-            <label for="name">Nom *</label>
-            <input type="text" id="name" placeholder="Jean Dupont" required>
+  </div>
+    <div class="contact-container">
+      <div class="vertical-bar left"></div>
+          
+      <form class="form-container">
+        <label for="name">Nom *</label>
+        <input type="text" id="name" placeholder="Jean Dupont" required>
     
-            <label for="password">Mot de passe *</label>
-            <input type="password" id="password" placeholder="123456789" required>
+        <label for="password">Mot de passe *</label>
+        <input type="password" id="password" placeholder="123456798" required>
     
-            <label for="email">Courrier électronique *</label>
-            <input type="email" id="email" placeholder="Ex : jeandupont@mail.com" required>
+        <label for="email"> Courrier électronique *</label>
+        <input type="email" id="email" placeholder="Ex : jeandupont@mail.com" required>
     
-            <fieldset>
-              <legend>Sexe</legend>
-              <label><input type="radio" name="gender" value="homme"> Homme</label>
-              <label><input type="radio" name="gender" value="femme"> Femme</label>
-            </fieldset>
+        <fieldset>
+          <legend>Sexe</legend>
+          <label> <input type="radio" name="gender" value="homme"> Homme</label>
+          <label> <input type="radio" name="gender" value="femme"> Femme</label>
+        </fieldset>
     
-            <label for="phone">Téléphone</label>
-            <input type="tel" id="phone" placeholder="O6 06 06 06 06">
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" placeholder="O6 06 06 06 06">
     
-            <label for="dob">Date de naissance</label>
-            <input type="date" id="dob">
+        <label for="dob">Date de naissance</label>
+        <input type="date" id="dob">
     
-            <button type="submit">Valider</button>
-          </form>
-          <div class="vertical-bar right"></div>
-        </div>
-      </main>
-      <footer class="footer"></footer>
+        <button type="submit">Valider</button>
+      </form>
+      
+      <div class="vertical-bar right"></div>
+    </div>
+</main>
+
+<footer class="footer"></footer>
+
 </body>
 </html>
