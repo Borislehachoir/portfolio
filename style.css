@@ -13,10 +13,11 @@ body {
 
 main {
   padding: 40px 0;
+  padding-top: 135px;
   display: flex;
   flex-direction: column;
   gap: 60px; 
-  background-image: url(vagues.jpg);
+  background-image: url(haileypinterest-clouds.jpg);
   background-color: rgba(255, 255, 255, 0.5)
 
 }
@@ -26,10 +27,21 @@ header {
   padding: 1rem 2rem;
 }
 
+/*Section "Navbar"*/
+.homepage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: brown;
+  z-index: 1000;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .logo {
@@ -38,6 +50,7 @@ header {
   font-weight: bold;
   height: 70px;
   width: auto;
+  margin-right: 600px;
 }
 
 .nav-links {
@@ -104,7 +117,7 @@ header {
   border-color: #a29bfe;
 }
 
-
+/*Section pour le formulaire */
 form {
   max-width: 420px; 
   margin: 50px auto; 
@@ -115,6 +128,13 @@ form {
   color: #f9f9f9;
   border-radius: 10px; 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+form .contactez {
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Espace sous le texte */
 }
 
 .feedback-input {
@@ -159,18 +179,7 @@ textarea {
 }
 [type="submit"]:hover { background:#CC4949; }
 
-
-
-.footer {
-  background-color: #2A5A2F;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
+/*Section "A propos" */ 
 .profile-image {
   width: 400px; 
   height: auto; 
@@ -193,13 +202,48 @@ textarea {
 .about-content {
   display: flex;
   align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px #CC4949, 
+               -2px -2px 4px #CC4949,
+               2px -2px 4px #CC4949,
+               -2px 2px 4px #CC4949;
 }
 
 .about-section {
   margin-bottom: 20px; 
-  background-color: rgb(0, 128, 0, 0.3) 
 }
 
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-50%); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+.about-text p {
+  animation: slideFromLeft 2s ease-out; 
+}
+
+.profile-image {
+  animation: slideFromTop 2s ease-out; 
+}
+
+/*Partie dédiée aux boîtes de projets*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -275,3 +319,13 @@ textarea {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
 }
 
+/*Style du footer*/
+.footer {
+  background-color: #2A5A2F;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

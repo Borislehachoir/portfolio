@@ -10,24 +10,28 @@
 </head>
 <body>
   
-<header class="homepage">
-  <nav>
-    <ul class="nav-links">
-        <li><a href="#accueil"></a></li>
+  <header class="homepage">
+    
+    <nav class="navbar">
+      <ul class="nav-links">
+        <img class="logo" src="logoportfolio.png" alt="">
+        <li><a href="#accueil">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
         <li><a href="#projets">Mes projets</a></li>
-        <li><a href="#contact">Contact</a></li>    
-    </ul>
-  </nav>
-</header>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
 <main>
   <div class="about-section" id="accueil">
     <div class="about-content">
       <img class="profile-image" src="moiastflo.png" alt="Moi à Saint Florent">
+      
       <div class="about-text">
         <p> Boris Rocchietti</p>
         <p>Portofolio MMI </p>
+      
       </div>
     </div>
   </div>
@@ -35,11 +39,12 @@
 <div class="projets-flex">
   <div class="custom-container">
     <div class="image-box">
-      <img src="cerf-volant.jpg" alt="Cerf-volant">
+      <img src="vagues.jpg" alt="vagues">
     </div>
     <div class="text-box">
-      <div class="text-item">Projet 1</div>
-      <div class="text-item">abcdefg</div>
+      <div class="text-item">Film 1</div>
+      <div class="text-item">Compétences acquises : Montage, etc</div>
+      <div class="text-item">Résumé : Film 1 réalisé avec groupe X dans le cadre d'un cours Y</div>
     </div>
   </div> 
   <div class="custom-container">
@@ -47,23 +52,42 @@
       <img src="cerf-volant.jpg" alt="Cerf-volant">
     </div>
     <div class="text-box">
-      <div class="text-item">Projet 2</div>
-      <div class="text-item">hijklmnop</div>
+      <div class="text-item"> Affiche 1</div>
+      <div class="text-item">Compétences acquises : Design graphique, etc. </div>
+      <div class="text-item">Réalisée dans le cadre d'une SAE X pour un festival Y </div>
     </div>
   </div> 
   <div class="custom-container">
     <div class="image-box">
-      <img src="cerf-volant.jpg" alt="Cerf-volant">
+      <img src="teapot.png" alt="théière">
     </div>
     <div class="text-box">
-      <div class="text-item">Projet 3</div>
-      <div class="text-item">qrstuvwxyz</div>
+      <div class="text-item">Pub pour un appart X</div>
+      <div class="text-item">Compétences acquises : Communication numérique, montage, etc. </div>
+      <div class="text-item">Réalisée dans le cadre d'un stage en entreprise X en Y 2024 </div>
     </div>
   </div> 
 </div>
     
-     
+<div class="about-section" id="about">
+  <div class="about-content">
+    <img class="profile-image" src="IMG-20250118-WA0007.jpg" alt="Boris Rocchietti (moi) mais stylé">
+    
+    <div class="about-text">
+      <p> Bonjour !</p>
+      <p>Je m'appelle <span>Boris Rocchietti</span>, j'ai 19 ans et je suis étudiant en
+        Bachelor Universitaire de Technologie (B.U.T) dans les Métiers du Multimédia et d'Internet (M.M.I).
+        Passionné par les nouvelles <span>Technologies</span> et la communication <span>digitale</span>, je souhaite me spécialiser dans l'audiovisuel. 
+        Je suis quelqu’un de curieux, persévérant et
+        passionné qui apprécie travailler
+        en équipe. 
+      </p>
+    </div>
+  </div>
+</div>
+
 <form>      
+  <p class="contactez">Contactez-nous !</p>
   <input name="name" type="text" class="feedback-input" placeholder="Votre nom" />   
   <input name="email" type="text" class="feedback-input" placeholder="Email" />
           
@@ -75,6 +99,7 @@
     <legend>Sexe</legend>
     <label> <input type="radio" name="gender" value="homme"> Homme</label>
     <label> <input type="radio" name="gender" value="femme"> Femme</label>
+    <label> <input type="radio" name="gender" value="femme"> Autre</label>
   </fieldset>
           
   <input type="submit" value="Envoyer"/>
