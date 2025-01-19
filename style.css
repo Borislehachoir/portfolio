@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -14,6 +16,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 60px; 
+  background-image: url(vagues.jpg);
+  background-color: rgba(255, 255, 255, 0.5)
+
 }
 
 header {
@@ -99,51 +104,62 @@ header {
   border-color: #a29bfe;
 }
 
-.contact-container {
-  flex-grow: 1; 
+
+form {
+  max-width: 420px; 
+  margin: 50px auto; 
+  padding: 20px; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #5D473A;
+  flex-direction: column; 
+  background-color: #2A5A2F; 
+  color: #f9f9f9;
+  border-radius: 10px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #77B5FE;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  position: relative;
-  min-height: calc(100vh - 150px); 
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
 }
+[type="submit"]:hover { background:#CC4949; }
 
-.form-container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: center; 
-  display: flex;
-  background-color: white;
-  padding: 0px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  width: 40%;
-  max-width: 600px;
-  margin: 0 auto;
-}
 
-.vertical-bar {
-  width: 100px;
-  display: flexbox;
-  justify-content: space-between;
-  background-color: #826E26;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-}
-
-.vertical-bar.left {
-  left: 0;
-}
-
-.vertical-bar.right {
-  right: 0;
-}
 
 .footer {
   background-color: #2A5A2F;
@@ -181,6 +197,7 @@ header {
 
 .about-section {
   margin-bottom: 20px; 
+  background-color: rgb(0, 128, 0, 0.3) 
 }
 
 .container {
