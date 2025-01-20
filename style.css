@@ -57,7 +57,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: brown;
+  background-color: #8B2323;
   z-index: 1000;
 }
 
@@ -345,7 +345,7 @@ textarea {
 
 /*Style du footer*/
 .footer {
-  background-color: #2A5A2F;
+  background-color: #26502D;
   display: flex;
   height: 40px;
   width: 100%;
