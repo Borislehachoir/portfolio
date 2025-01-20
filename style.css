@@ -1,5 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+
+/*Chargement...*/
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f03355;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  animation: l1 2s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+
+@keyframes l1 {
+  33% {
+    border-radius: 0;
+    background: #514b82;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  66% {
+    border-radius: 0;
+    background: #ffa516;
+    clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%);
+  }
+}
+
+/*Corps de la page*/
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -17,14 +42,13 @@ main {
   display: flex;
   flex-direction: column;
   gap: 60px; 
-  background-image: url(haileypinterest-clouds.jpg);
-  background-color: rgba(255, 255, 255, 0.5)
+  background-color:#f5deb3 ;
 
 }
 
 header {
   background-color: brown;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 /*Section "Navbar"*/
@@ -41,16 +65,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+}
+
+.navbar-left {
+  flex: 1;
 }
 
 .logo {
   font-size: 1.5rem;
   color: #fff;
   font-weight: bold;
-  height: 70px;
+  height: 50px;
   width: auto;
-  margin-right: 600px;
 }
 
 .nav-links {
@@ -58,9 +84,9 @@ header {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin: 0;
-  padding: 10px;
-  font-size: 26px;
+  margin-right: 15px;
+  padding: 5px;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
 }
@@ -121,10 +147,10 @@ header {
 form {
   max-width: 420px; 
   margin: 50px auto; 
-  padding: 20px; 
+  padding: 10px; 
   display: flex;
   flex-direction: column; 
-  background-color: #2A5A2F; 
+  background-color: #19381C; 
   color: #f9f9f9;
   border-radius: 10px; 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
@@ -134,7 +160,7 @@ form .contactez {
   color: whitesmoke;
   font-size: 22px;
   font-weight: bold;
-  margin-bottom: 20px; /* Espace sous le texte */
+  margin-bottom: 10x;
 }
 
 .feedback-input {
@@ -145,10 +171,10 @@ form .contactez {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #77B5FE;
+  border:2px solid #9AC9FE;
   transition: all 0.3s;
   padding: 13px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   width:100%;
   box-sizing: border-box;
   outline:0;
@@ -165,16 +191,16 @@ textarea {
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#CC6666;
+  background:#9AC9FE;
   border-radius:5px;
   border:0;
   cursor:pointer;
-  color:white;
-  font-size:24px;
+  color: #3C3434;
+  font-size:18px;
   padding-top:10px;
   padding-bottom:10px;
   transition: all 0.3s;
-  margin-top:-4px;
+  margin-top: 6px;
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
@@ -197,16 +223,14 @@ textarea {
 .about-text p:last-child {
   font-size: 20px; 
   margin: 5px 0 0; 
+  margin-top: 10px;
 }
 
 .about-content {
   display: flex;
   align-items: center;
-  color: white;
-  text-shadow: 2px 2px 4px #CC4949, 
-               -2px -2px 4px #CC4949,
-               2px -2px 4px #CC4949,
-               -2px 2px 4px #CC4949;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .about-section {
@@ -286,7 +310,7 @@ textarea {
   flex-direction: column; 
   align-items: center; 
   justify-content: flex-start; 
-  background-color: #2A5A2F; 
+  background-color: #19381C; 
   padding: 20px;
   border-radius: 10px; 
   width: 300px; 
@@ -312,7 +336,7 @@ textarea {
   text-align: center; 
   font-size: 18px;
   font-weight: bold;
-  color: #333; 
+  color: #595959; 
   padding: 10px;
   background-color: #fff; 
   border-radius: 5px; 
@@ -323,7 +347,7 @@ textarea {
 .footer {
   background-color: #2A5A2F;
   display: flex;
-  height: 60px;
+  height: 40px;
   width: 100%;
   position: fixed;
   bottom: 0;
