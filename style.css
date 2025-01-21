@@ -342,7 +342,7 @@ textarea {
   body {
     padding: 10px;
   }
-  
+
   .navbar {
     display: flex;
     flex-direction: row;  
@@ -354,6 +354,11 @@ textarea {
     padding: 15px;
     text-align: center;
   }
+
+ main { background-color: #f5deb3 ;
+
+ }
+
   
   .container, .projets-flex {
     flex-direction: column;
