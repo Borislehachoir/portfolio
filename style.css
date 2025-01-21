@@ -395,30 +395,38 @@ textarea {
   body {
     padding: 10px;
   }
+  .navbar {
+    display: none; 
+    flex-direction: column;
+    background-color: #872222;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navbar ul li a {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #d4e1dd;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
 
   .hamburger-menu {
     display: block;
   }
 
-  .navbar ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #872222;
-    width: 100%;
-    padding: 1em 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .navbar ul li {
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .toggle-menu:checked + .hamburger-menu + nav ul {
-    display: flex;
+  .toggle-menu:checked + .hamburger-menu + .navbar {
+    display: flex; 
   }
 
   .about-content {
