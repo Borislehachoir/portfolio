@@ -93,9 +93,6 @@ main {
   color: #d4e1dd;
 }
 
-.toggle-menu {
-  display: none;
-}
 
 .hamburger-menu {
   display: none;
@@ -417,15 +414,11 @@ textarea {
     border-bottom: 1px solid #d4e1dd;
   }
 
-  .toggle-menu {
-    display: block;
-  }
-
   .hamburger-menu {
     display: block;
   }
 
-  .toggle-menu:checked + .hamburger-menu + .navbar {
+   .hamburger-menu + .navbar {
     display: flex; 
   }
 
