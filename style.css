@@ -91,6 +91,7 @@ main {
   height: 100%;
   background: transparent;
   border: 2px solid transparent;
+  border-radius: 12px;
   transition: all 0.5s;
   transform: scale(1.1);
   opacity: 0;
@@ -103,7 +104,7 @@ main {
 }
 
 .nav-links li:nth-child(1) a:hover:before {
-  border-color: #0470fe;
+  border-color: #9AC9FE;
 }
 
 .nav-links li:nth-child(2) a:hover:before {
@@ -111,11 +112,11 @@ main {
 }
 
 .nav-links li:nth-child(3) a:hover:before {
-  border-color: #1582fe;
+  border-color: #00ff0d;
 }
 
 .nav-links li:nth-child(4) a:hover:before {
-  border-color: #a29bfe;
+  border-color: #f5deb3;
 }
 
 /*Section pour le formulaire */
