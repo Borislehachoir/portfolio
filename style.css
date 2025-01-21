@@ -85,14 +85,9 @@ main {
   position: relative;
 }
 
-.navbar ul:hover a {
-  color: rgba(255, 255, 255, 0.2);
-}
-
 .navbar ul li a:hover {
   color: #d4e1dd;
 }
-
 
 /*Section pour le formulaire */
 form {
