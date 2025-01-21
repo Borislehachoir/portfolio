@@ -22,15 +22,19 @@ main {
 
 }
 
+
 /*Section "Navbar"*/
 .homepage {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #872222;
   z-index: 1000;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
 }
+
 
 .navbar {
   display: flex;
@@ -207,6 +211,7 @@ textarea {
 }
 
 
+
 @keyframes slideFromLeft {
   0% {
     transform: translateX(-50%);
@@ -322,4 +327,90 @@ textarea {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 100px;
+    gap: 30px;
+  }
+
+  .navbar {
+    position: relative;
+}
+
+.nav-links {
+    display: none;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-left::after {
+    content: '☰';
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.navbar-left:hover + .nav-links,
+.nav-links:hover {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #872222;
+    padding: 20px 0;
+}
+
+.nav-links a {
+    text-align: center;
+    padding: 15px;
+}
+
+  form {
+    max-width: 90%;
+    margin: 30px auto;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .about-text p:first-child {
+    font-size: 24px;
+  }
+
+  .about-text p:last-child {
+    font-size: 16px;
+  }
+
+  .projets-flex {
+    gap: 10px;
+  }
+
+  .custom-container {
+    width: 90%;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+  }
+
+  .piedepage {
+    height: auto;
+    padding: 10px;
+  }
 }
