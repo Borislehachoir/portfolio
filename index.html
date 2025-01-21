@@ -8,21 +8,21 @@
 </head>
 <body>
   <header class="homepage">
-    <nav class="navbar">
-      <div class="navbar-left">
-       <a href="index.html">
-        <img class="logo" src="logoportfolio.png" alt="logo de mon portfolio">
-      </a>
+    <section class="navbar2">
+      <div class="logo-container">
+        <img src="logoportfolio.png" alt="Logo" class="logo">
       </div>
-      <div class="navbar-right">
-        <ul class="nav-links">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#projets">Mes projets</a></li>
+      <input type="checkbox" id="toggle-menu" class="toggle-menu">
+      <label for="toggle-menu" class="hamburger-menu">☰</label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Accueil</a></li>
           <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </section>
   </header>
 
 <main>
@@ -84,7 +84,7 @@
   
 </div>
 
-<form id="contact">      
+<form class="contact-form" id="contact">      
   <p class="contactez">Contactez-nous !</p>
   <input name="name" type="text" class="feedback" placeholder="Nom, Prénom" />   
   <input name="email" type="text" class="feedback" placeholder="Adresse e-mail" />
@@ -93,11 +93,17 @@
 
   <textarea name="text" class="feedback" placeholder="Que vouliez-vous me dire ?"></textarea>
 
-  <fieldset class="feedback">
-    <legend>Sexe</legend>
-    <label> <input type="sexe" name="gender" value="homme"> Homme</label>
-    <label> <input type="sexe" name="gender" value="femme"> Femme</label>
-    <label> <input type="sexe" name="gender" value="femme"> Autre</label>
+  <fieldset>
+    <legend>Genre</legend>
+    <label>
+      <input type="radio" name="genre" value="homme" required> Homme
+    </label>
+    <label>
+      <input type="radio" name="genre" value="femme" required> Femme
+    </label>
+    <label>
+      <input type="radio" name="genre" value="autre" required> Autre
+    </label>
   </fieldset>
           
   <input type="submit" value="Envoyer"/>
