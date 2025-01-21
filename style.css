@@ -35,18 +35,15 @@ main {
   opacity: 1;
 }
 
-.navbar2 {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background-color: #872222;
+.navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.navbar-left {
+  flex: 1;
 }
 
 .logo {
@@ -57,36 +54,68 @@ main {
   width: auto;
 }
 
-.navbar {
+.nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #FDFFF3;
+  gap: 2rem;
+  margin-right: 15px;
+  padding: 5px;
   font-size: 20px;
   font-weight: bold;
-  padding: 10px 20px;
-  transition: color 0.3s ease, transform 0.5s ease;
   position: relative;
 }
 
-.navbar ul li a:hover {
-  color: #d4e1dd;
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.nav-links:hover a {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links li:hover a {
+  color: #fff;
+}
+
+.nav-links a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  transform: scale(1.1);
+  opacity: 0;
+}
+
+.nav-links a:hover:before {
+  opacity: 1;
+  transform: scale(1);
+  border-color: #fff;
+}
+
+.nav-links li:nth-child(1) a:hover:before {
+  border-color: #0470fe;
+}
+
+.nav-links li:nth-child(2) a:hover:before {
+  border-color: #ff7675;
+}
+
+.nav-links li:nth-child(3) a:hover:before {
+  border-color: #1582fe;
+}
+
+.nav-links li:nth-child(4) a:hover:before {
+  border-color: #a29bfe;
 }
 
 /*Section pour le formulaire */
@@ -361,10 +390,9 @@ textarea {
  main { background-color: #f5deb3 ;
 
  }
-
   
   .container, .projets-flex {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
   }
