@@ -102,42 +102,6 @@ main {
   padding: 0 1em;
 }
 
-.navbar ul li a:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: 2px solid transparent;
-  transition: all 0.5s;
-  transform: scale(1.1);
-  opacity: 0;
-}
-
-.navbar ul li a:hover:before {
-  opacity: 1;
-  transform: scale(1);
-  border-color: #fff;
-}
-
-.navbar ul li:nth-child(1) a:hover:before {
-  border-color: #0470fe;
-}
-
-.navbar ul li:nth-child(2) a:hover:before {
-  border-color: #ff7675;
-}
-
-.navbar ul li:nth-child(3) a:hover:before {
-  border-color: #1582fe;
-}
-
-.navbar ul li:nth-child(4) a:hover:before {
-  border-color: #a29bfe;
-}
-
 /*Section pour le formulaire */
 form {
   max-width: 420px; 
