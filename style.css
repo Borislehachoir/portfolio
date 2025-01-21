@@ -369,54 +369,56 @@ textarea {
   padding: 20px 0; 
 }
 
-/*Responsive Design sur mobile ( à améliorer) */
 @media (max-width: 768px) {
+  
   body {
-    padding: 10px;
+    background-color: #f5deb3;
+  }
+
+
+  body, 
+  .nav-links a, 
+  .about-text p:first-child, 
+  .about-text p:last-child, 
+  .text-item {
+    font-size: 90%;
+  }
+
+  .about-text p:first-child {
+    font-size: 28px; 
+  }
+
+  .about-text p:last-child {
+    font-size: 16px; 
+  }
+
+  .box {
+    max-width: 200px; 
+    height: 180px; 
+    display: grid;
+  }
+
+  .box img {
+    height: 100px; 
   }
 
   .navbar {
-    display: flex;
-    flex-direction: row;  
-    background-color: #872222;
-    justify-content: space-around;
+    padding: 0.5rem 1rem; 
   }
 
-  .navbar ul li a {
-    padding: 15px;
-    text-align: center;
+  .nav-links {
+    gap: 1rem; 
   }
 
- main { background-color: #f5deb3 ;
+  .nav-links a {
+    font-size: 16px; 
+    padding: 5px 10px;
+  }
 
- }
   
-  .container, .projets-flex {
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .box, .custom-container {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .feedback, [type="submit"] {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  form {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .piedepage {
-    flex-direction: column;
-    text-align: center;
+  .contactez, 
+  legend, 
+  .text-item {
     font-size: 14px;
-    height: auto;
-    padding: 10px 0;
   }
 }
