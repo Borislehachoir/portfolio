@@ -378,14 +378,14 @@ textarea {
   
   body {
     background-color: #f5deb3;
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
 
   .homepage,
 .piedepage {
-  width: 100%;
-  box-sizing: border-box;
-}
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   body, 
   .nav-links a, 
@@ -406,33 +406,56 @@ textarea {
     font-size: 10px; 
   }
 
-  .box {
-    max-width: 200px; 
-    height: 180px; 
-    display: grid;
-  }
+    .box {
+      max-width: 200px; 
+      height: 180px; 
+      display: grid;
+    }
 
-  .box img {
-    height: 100px; 
-  }
+    .box img {
+      height: 100px; 
+   }
 
-  .navbar {
-    padding: 0.5rem 1rem; 
-  }
+    .navbar {
+      padding: 0.5rem 1rem; 
+    }
 
-  .nav-links {
-    gap: 1rem; 
-  }
+    .nav-links {
+      gap: 1rem; 
+    }
 
-  .nav-links a {
-    font-size: 16px; 
-    padding: 5px 10px;
-  }
+    .nav-links a {
+      font-size: 16px; 
+      padding: 5px 10px;
+    }
 
   
-  .contactez, 
-  legend, 
-  .text-item {
+    .contactez, 
+    legend, 
+    .text-item {
     font-size: 14px;
+
+    .about-content {
+      flex-direction: column;
+      align-items: center; 
+      text-align: center; 
+    }
+    
+    .profile-image {
+      margin-bottom: 20px; 
+      width: 80%; 
+      height: auto; 
+    }
+    
+    .about-text p:first-child {
+      font-size: 24px; 
+      font-weight: bold; 
+    }
+    
+    .about-text p {
+      font-size: 16px; 
+      margin: 10px 0; 
+      line-height: 1.5; 
+    }
   }
 }
