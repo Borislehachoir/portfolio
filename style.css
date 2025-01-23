@@ -23,7 +23,7 @@ main {
 }
 
 [id] {
-  scroll-margin-top: 95px; /* Ajuste selon le décalage voulu */
+  scroll-margin-top: 95px; 
 }
 
 
@@ -378,8 +378,14 @@ textarea {
   
   body {
     background-color: #f5deb3;
+      overflow-x: hidden;
   }
 
+  .homepage,
+.piedepage {
+  width: 100%;
+  box-sizing: border-box;
+}
 
   body, 
   .nav-links a, 
