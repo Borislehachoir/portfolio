@@ -125,7 +125,7 @@ main {
 
 /*Section pour le formulaire */
 form {
-  max-width: 420px; 
+  width: 420px; 
   margin: 50px auto; 
   padding: 10px; 
   display: flex;
