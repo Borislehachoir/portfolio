@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+    background-color: wheat;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.item {
+  position: absolute;
+  background-color: transparent;
+  width: calc(var(--i) * 2.5vmin);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: .9vmin solid #872222;
+  transform-style: preserve-3d;
+  transform: rotateX(70deg) translateZ(50px);
+  animation: my-move 3s ease-in-out calc(var(--i) * 0.08s) infinite;
+  box-shadow: 0px 0px 15px rgb(124, 124, 124),
+    inset 0px 0px 15px rgb(124, 124, 124);
+}
+
+@keyframes my-move {
+  0%,
+  100% {
+    transform: rotateX(70deg) translateZ(50px) translateY(0px);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    transform: rotateX(70deg) translateZ(50px) translateY(-50vmin);
+    filter: hue-rotate(180deg);
+  }
+}
+
+.intro-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: #872222;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dots::after {
+    content: '';
+    display: inline-block;
+    animation: dots-animation 3.5s steps(4, end) infinite;
+  }
+  
+  @keyframes dots-animation {
+    0% {
+      content: '';
+    }
+    25% {
+      content: '.';
+    }
+    50% {
+      content: '..';
+    }
+    75% {
+      content: '...';
+    }
+    100% {
+      content: '';
+    }
+  }
+  .piedepage {
+    background-color: #872222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+    
+  }
