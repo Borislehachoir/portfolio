@@ -395,7 +395,7 @@ textarea {
     font-size: 90%;
   }
   .about-text {
-    display:grid
+    display:column
   }
 
   .about-text p:first-child {
@@ -456,6 +456,7 @@ textarea {
       font-size: 16px; 
       margin: 10px 0; 
       line-height: 1.5; 
+      position: column;
     }
   }
 }
