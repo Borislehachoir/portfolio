@@ -266,23 +266,12 @@ textarea {
   }
 }
 
-@keyframes slideFromTop {
-  0% {
-    transform: translateY(-50%); 
-    opacity: 0; 
-  }
-  100% {
-    transform: translateY(0); 
-    opacity: 1; 
-  }
-}
-
 .about-text p {
   animation: slideFromLeft 2s ease-out; 
 }
 
 .profile-image {
-  animation: slideFromTop 2s ease-out; 
+  animation: slideFromTLeft 2s ease-out; 
 }
 
 /*Partie dédiée aux boîtes de projets*/
