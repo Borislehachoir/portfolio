@@ -433,7 +433,8 @@ textarea {
     .contactez, 
     legend, 
     .text-item {
-    font-size: 14px;
+    font-size: 14px; 
+    }
 
     .about-content {
       flex-direction: column;
@@ -466,4 +467,4 @@ textarea {
       line-height: 1.5;
     }
   }
-}
+
